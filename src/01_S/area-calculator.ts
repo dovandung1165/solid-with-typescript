@@ -1,10 +1,9 @@
-import Square from './square';
-import Circle from './circle';
+import { ShapesInterface } from 'src/types';
 
 class AreaCalculator {
-  private readonly shapes: (Square | Circle)[];
+  private readonly shapes;
 
-  constructor(shapes: (Square | Circle)[]) {
+  constructor(shapes: ShapesInterface) {
     this.shapes = shapes;
   }
 
